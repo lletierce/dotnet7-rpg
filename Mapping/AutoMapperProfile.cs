@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using dotnet_rpg.Dtos.Skill;
+using dotnet_rpg.Dtos.Weapon;
 
 namespace dotnet_rpg.Mapping
 {
@@ -13,6 +15,8 @@ namespace dotnet_rpg.Mapping
             CreateMap<Character, GetCharacterDto>();
             CreateMap<AddCharacterDto, Character>();
             CreateMap<UpdateCharacterDto, Character>();
+            CreateMap<Weapon, GetWeaponDto>();
+            CreateMap<Skill, GetSkillDto>();
         }
     }
 }
